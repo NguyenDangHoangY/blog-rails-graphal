@@ -54,3 +54,28 @@ Post.create(
         }
     ]
 )
+
+Relationship.create(
+    [
+        {
+            follower_id: 5,
+            followed_id: 1
+        },
+        {
+            follower_id: 4,
+            followed_id: 1
+        },
+        {
+            follower_id: 3,
+            followed_id: 1
+        },
+        {
+            follower_id: 2,
+            followed_id: 1
+        },
+        {
+            follower_id: 1,
+            followed_id: 4
+        },
+    ]
+)
