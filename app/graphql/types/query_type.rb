@@ -39,6 +39,7 @@ module Types
     field :post, Types::PostType, null: false, description: "return a post" do
       argument :id, ID, required: true
     end
+
     def post(id:)
       Post.find(id)
     end
