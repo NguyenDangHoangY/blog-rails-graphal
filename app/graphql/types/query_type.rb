@@ -29,5 +29,18 @@ module Types
       User.find(id)
     end
 
+    # Posts:
+    field :posts, [Types::PostType], null: false, description: "return all posts"
+    def posts
+      Post.all
+    end
+
+    # Post:
+    field :post, Types::PostType, null: false, description: "return a post" do
+      argument :id, ID, required: true
+    end
+    def post(id:)
+      Post.find(id)
+    end
   end
 end

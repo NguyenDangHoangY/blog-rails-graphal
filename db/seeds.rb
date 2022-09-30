@@ -39,3 +39,18 @@ User.create(
         }, 
     ]
 )
+
+Post.create(
+    [
+        {
+            title: "what is your english name?",
+            content: "english is more and more popular",
+            user_id: 1
+        },
+        {
+            title: "how to learn ruby in five minute? and 3 months",
+            content: "ruby is a future language",
+            user_id: 1
+        }
+    ]
+)
