@@ -22,10 +22,10 @@ module Types
 
     # User:
     field :user, Types::UserType, null: false, description: "return a user" do
-      argument :id, required: true
+      argument :id, ID, required: true
     end
 
-    def users(id:)
+    def user(id:)
       User.find(id)
     end
 
